@@ -126,7 +126,7 @@ def checkout(request):
         # return render(request, 'shop/checkout.html', {'thank': thank, 'id1': id1})
         # Request paytm to transfer the amount to your account after payment by user
         params = {
-            'MID': 'WorldP64425807474247',
+            'MID': 'YOUR-MERCHANT-KEY',
             'ORDER_ID': str(order.order_id),
             'TXN_AMOUNT': str(amount),
             'CUST_ID': email,
